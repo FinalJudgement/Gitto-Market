@@ -1,0 +1,64 @@
+html {
+  background: url(images/landing.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.landing-header {
+  background-color: rgb(255, 66, 66);
+  font-family: helvetica;
+  margin: 0;
+}
+
+.landing-nav {
+  font-size: 18px;
+}
+.landing-nav h1 {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  padding-left: 30px;
+}
+
+.landing-nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+.landing-nav a:hover {
+  transition: 0.5s;
+  background-color: rgb(252, 147, 147);
+  border-bottom: 2px solid rgb(107, 230, 107);
+  color: rgb(126, 230, 126);
+}
+
+.main-content {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 10%;
+  color: white;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+}
+
+.overlay {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: auto;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.3); /*can be anything, of course*/
+}

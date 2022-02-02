@@ -1,20 +1,26 @@
+@import url(variables.css);
+
 body {
   font-family: "Lato", sans-serif;
   transition: background-color 0.5s;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1500px;
 }
 
 header {
-  background-color: rgb(255, 78, 78);
+  background-color: var(--gitto-red);
   padding: 20px;
 }
 
 .fa-bars {
   font-size: 20px;
-  background-color: white;
-  color: rgb(0, 148, 0);
-  padding: 10px;
+  background-color: var(--gitto-red);
+  color: var(--gitto-forest);
+  padding: var(--spacing-small);
+}
+#my-side-nav {
+  white-space: nowrap;
 }
 .side-nav {
   height: 100%;
@@ -23,17 +29,17 @@ header {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(226, 226, 226);
+  background-color: var(--gitto-green);
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: var(--spacing-xlarge);
   transition: 0.5s;
 }
 
 .side-nav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: var(--nav-font-size);
+  color: var(--text-light);
   display: block;
   transition: 0.3s;
 }
@@ -55,7 +61,7 @@ header {
   padding: 20px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 767px) {
   .sidenav {
     padding-top: 15px;
   }

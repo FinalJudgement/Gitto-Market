@@ -1,0 +1,46 @@
+@import url(variables.css);
+
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.landing-header {
+  background-color: var(--gitto-red);
+  max-width: 1500px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  font-weight: 700;
+  font-family: Verdana;
+}
+
+.main-nav {
+  display: flex;
+  margin: 0 60px;
+}
+
+.nav-logo {
+  margin: 0 var(--spacing-large);
+}
+
+.nav-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.nav-divider {
+  margin: var(--spacing-small);
+  height: auto;
+  border-right: solid white 1px;
+}
+
+.nav-products {
+  margin: auto 0;
+}
+
+.nav-products a {
+  color: white;
+  text-decoration: none;
+}

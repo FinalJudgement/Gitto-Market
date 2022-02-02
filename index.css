@@ -1,0 +1,66 @@
+@import url(variables.css);
+
+html {
+  background: url(images/landing.jpg) no-repeat center center fixed;
+  background-size: cover;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.landing-header {
+  background-color: var(--gitto-red);
+  max-width: 1500px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  font-weight: 700;
+  font-family: Verdana;
+}
+
+.main-nav {
+  display: flex;
+  margin: 0 60px;
+}
+.nav-logo {
+  margin: 0 var(--spacing-large);
+}
+
+.nav-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.nav-divider {
+  margin: var(--spacing-small);
+  height: auto;
+  border-right: solid white 1px;
+}
+
+.nav-products {
+  margin: auto 0;
+}
+
+.nav-products a {
+  color: white;
+  text-decoration: none;
+}
+
+.landing-greet {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 10%;
+  color: white;
+}
+
+.landing-greet img {
+  width: 250px;
+  height: auto;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3); /*can be anything, of course*/
+}

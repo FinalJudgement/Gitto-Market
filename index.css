@@ -13,8 +13,8 @@ body {
   background-color: var(--gitto-red);
   max-width: 1500px;
   margin: 0 auto;
-  font-size: 1.1em;
-  font-weight: 700;
+  font-size: 1em;
+  font-weight: 1000;
   font-family: Verdana;
 }
 
@@ -37,15 +37,25 @@ body {
   border-right: solid white 1px;
 }
 
-.nav-products {
+.nav-list {
   margin: auto 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.nav-products a {
-  color: white;
+.nav-list li a {
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
+.nav-list .list-item {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.list-item a:hover {
+  border-bottom: 2px solid white;
+}
 .landing-greet {
   text-align: center;
   font-size: 40px;

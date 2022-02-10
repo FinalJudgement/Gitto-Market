@@ -2,16 +2,16 @@
 
 html {
   box-sizing: border-box;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 body {
   margin: 0;
 }
 
 .landing-header {
-  background-color: var(--gitto-red);
-  max-width: 1500px;
-  margin: 0 auto;
-  font-size: 1.1em;
+  background-color: var(--gitto-forest);
+  font-size: 17px;
   font-weight: 700;
   font-family: Verdana;
 }
@@ -36,11 +36,55 @@ body {
   border-right: solid white 1px;
 }
 
-.nav-products {
+.nav-list {
   margin: auto 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.nav-products a {
-  color: white;
+.nav-list li a {
+  color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.list-item a:hover {
+  border-bottom: 2px solid white;
+}
+
+.footer-container {
+  background-color: var(--gitto-forest);
+  font-weight: 1000;
+  position: absolute;
+  bottom: 0;
+  width: 1500px;
+}
+
+.footer {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-heading {
+  margin-bottom: 2rem;
+}
+
+.footer-list {
+  margin: auto 0;
+  margin-top: 0px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-list-item {
+  margin: 1rem;
+  font-size: 20px;
+}
+.footer-list-item a {
+  text-decoration: none;
+  color: white;
 }
